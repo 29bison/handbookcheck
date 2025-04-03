@@ -4,7 +4,7 @@ import fitz  # PyMuPDF
 import openai
 import json
 
-openai.api_key = "your-openai-api-key"  # Replace this with your actual API key
+openai.api_key = st.secrets["OPENAI_API_KEY"]  # ✅ secure from Streamlit Cloud
 
 # Extract text from PDF
 def extract_text_from_pdf(uploaded_file):
