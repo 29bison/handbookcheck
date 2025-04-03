@@ -24,7 +24,7 @@ def answer_question(text, question):
     return response['choices'][0]['message']['content']
 
 # Streamlit UI
-st.title("PDF Q&A App")
+st.title("Handbook Evaluation")
 
 pdf_file = st.file_uploader("Upload a PDF", type="pdf")
 json_file = st.file_uploader("Upload your questions (.json)", type="json")
